@@ -1506,7 +1506,7 @@ void OPL3_Generate4ChStream(opl3_chip *chip, int16_t *sndptr1, int16_t *sndptr2,
     uint_fast32_t i;
     int16_t samples[4];
 
-    for(i = 0; i < numsamples; i++)
+    for (i = 0; i < numsamples; i++)
     {
         OPL3_Generate4ChResampled(chip, samples);
         sndptr1[0] = samples[0];
@@ -1522,7 +1522,7 @@ void OPL3_GenerateStream(opl3_chip *chip, int16_t *sndptr, uint32_t numsamples)
 {
     uint_fast32_t i;
 
-    for(i = 0; i < numsamples; i++)
+    for (i = 0; i < numsamples; i++)
     {
         OPL3_GenerateResampled(chip, sndptr);
         sndptr += 2;
