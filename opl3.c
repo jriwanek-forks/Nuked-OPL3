@@ -1002,7 +1002,7 @@ static void OPL3_ChannelWriteC0(opl3_channel *channel, uint8_t data)
 }
 
 #if OPL_ENABLE_STEREOEXT
-static void OPL3_ChannelWriteD0(opl3_channel* channel, uint8_t data)
+static void OPL3_ChannelWriteD0(opl3_channel *channel, uint8_t data)
 {
     if (channel->chip->stereoext)
     {
